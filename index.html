@@ -151,42 +151,66 @@
     </div>
   </div>
   
-  <!-- Página 8 -->
-  <div data-role="page" id="page8">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
-      <h1>Página 8</h1>
-    </div>
-    <div data-role="main" class="ui-content">
-      <h2>Conteúdo da Página 8</h2>
-      <p>Texto e imagem relacionados à página 8.</p>
-      <img src="caminho/para/imagem11.jpg" alt="Imagem 11">
-    </div>
+<!-- Página 8 -->
+<div data-role="page" id="page8">
+  <div data-role="header" data-position="fixed">
+    <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <h1>Página 8</h1>
   </div>
-  
-  <!-- Página 9 -->
-  <div data-role="page" id="page9">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
-      <h1>Página 9</h1>
-    </div>
-    <div data-role="main" class="ui-content">
-      <h2>Conteúdo da Página 9</h2>
-      <p>Texto e imagem relacionados à página 9.</p>
-      <img src="caminho/para/imagem12.jpg" alt="Imagem 12">
-    </div>
+  <div data-role="main" class="ui-content">
+    <h2>Formulário de Cadastro</h2>
+    <form action="caminho/para/processar_cadastro.php" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha">
+      <input type="submit" value="Cadastrar">
+    </form>
+    <img src="caminho/para/imagem11.jpg" alt="Imagem 11">
   </div>
-  
-  <!-- Página 10 -->
-  <div data-role="page" id="page10">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
-      <h1>Página 10</h1>
-    </div>
-    <div data-role="main" class="ui-content">
-      <h2>Conteúdo da Página 10</h2>
-      <p>Texto e imagem relacionados à página 10.</p>
-      <img src="caminho/para/imagem13.jpg" alt="Imagem 13">
+</div>
+
+<!-- Página 9 -->
+<div data-role="page" id="page9">
+  <div data-role="header" data-position="fixed">
+    <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <h1>Página 9</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <h2>Formulário de Revendedor</h2>
+    <form action="caminho/para/processar_revendedor.php" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <input type="submit" value="Tornar-se Revendedor">
+    </form>
+    <img src="caminho/para/imagem12.jpg" alt="Imagem 12">
+  </div>
+</div>
+
+<!-- Página 10 -->
+<div data-role="page" id="page10">
+  <div data-role="header" data-position="fixed">
+    <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <h1>Página 10</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <h2>Formulário de Reclamação</h2>
+    <form action="caminho/para/processar_reclamacao.php" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+      <input type="submit" value="Enviar Reclamação">
+    </form>
+    <img src="caminho/para/imagem13.jpg" alt="Imagem 13">
+  </div>
+</div>
     </div>
   </div>
 </body>
