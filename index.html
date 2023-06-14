@@ -1,192 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Clothes - Aplicação Web</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="caminho/para/estilos.css">
+  <script src="caminho/para/scripts.js"></script>
 </head>
 <body>
-  <div data-role="page" id="home">
-    <div data-role="header" data-position="fixed">
-      <h1>My Clothes</h1>
-      <div data-role="navbar">
-        <ul>
-          <li><a href="#page1" data-icon="home">Página 1</a></li>
-          <li><a href="#page2" data-icon="grid">Página 2</a></li>
-          <li><a href="#page3" data-icon="star">Página 3</a></li>
-          <li><a href="#page4" data-icon="alert">Página 4</a></li>
-          <li><a href="#page5" data-icon="user">Página 5</a></li>
-          <li><a href="#page6" data-icon="gear">Página 6</a></li>
-          <li><a href="#page7" data-icon="info">Página 7</a></li>
-          <li><a href="#page8" data-icon="camera">Página 8</a></li>
-          <li><a href="#page9" data-icon="calendar">Página 9</a></li>
-          <li><a href="#page10" data-icon="clock">Página 10</a></li>
-        </ul>
-      </div>
-    </div>
-    <div data-role="main" class="ui-content">
-      <h2>Bem-vindo à My Clothes</h2>
-      <p>Descrição da empresa e seus produtos/serviços.</p>
-      
-      <!-- Tabela com texto e imagens -->
-      <table data-role="table" id="products-table" data-mode="reflow" class="ui-responsive">
-        <thead>
-          <tr>
-            <th>Produto</th>
-            <th>Descrição</th>
-            <th>Imagem</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Camiseta</td>
-            <td>Camiseta de algodão com estampa</td>
-            <td><img src="https://loja.jonnysize.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/c/a/camiseta-masculina-algodao-basica-elefantao-azul-0037c.jpg" alt="Imagem 1"></td>
-          </tr>
-          <tr>
-            <td>Calça Jeans</td>
-            <td>Calça jeans estilo skinny</td>
-            <td><img src="https://loja.jonnysize.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/c/a/calca-jeans-masculina-skinny-confortavel-stonada-0075a.jpg" alt="Imagem 2"></td>
-          </tr>
-          <tr>
-            <td>Sapato Social</td>
-            <td>Sapato social de couro preto</td>
-            <td><img src="https://loja.jonnysize.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/s/a/sapato-masculino-social-couro-preto-307-1.jpg" alt="Imagem 3"></td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- Menu de navegação -->
+  <div data-role="header">
+    <h1>Meu Site</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1">Página 1</a></li>
+        <li><a href="#page2">Página 2</a></li>
+        <li><a href="#page3">Página 3</a></li>
+        <li><a href="#page4">Página 4</a></li>
+        <li><a href="#page5">Página 5</a></li>
+        <li><a href="#page6">Página 6</a></li>
+        <li><a href="#page7">Página 7</a></li>
+        <li><a href="#page8">Página 8</a></li>
+        <li><a href="#page9">Página 9</a></li>
+        <li><a href="#page10">Página 10</a></li>
+      </ul>
     </div>
   </div>
   
-  <!-- Página 1 -->
+  <!-- Páginas com conteúdo -->
   <div data-role="page" id="page1">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 1</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 1</h2>
       <p>Texto e imagem relacionados à página 1.</p>
-      <img src="caminho/para/imagem4.jpg" alt="Imagem 4">
+      <img src="caminho/para/imagem1.jpg" alt="Imagem 1">
     </div>
   </div>
   
-  <!-- Página 2 -->
   <div data-role="page" id="page2">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 2</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 2</h2>
       <p>Texto e imagem relacionados à página 2.</p>
-      <img src="caminho/para/imagem5.jpg" alt="Imagem 5">
+      <img src="caminho/para/imagem2.jpg" alt="Imagem 2">
     </div>
   </div>
   
-  <!-- Página 3 -->
   <div data-role="page" id="page3">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 3</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 3</h2>
       <p>Texto e imagem relacionados à página 3.</p>
-      <img src="caminho/para/imagem6.jpg" alt="Imagem 6">
+      <img src="caminho/para/imagem3.jpg" alt="Imagem 3">
     </div>
   </div>
   
-  <!-- Página 4 -->
   <div data-role="page" id="page4">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 4</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 4</h2>
       <p>Texto e imagem relacionados à página 4.</p>
-      <img src="caminho/para/imagem7.jpg" alt="Imagem 7">
+      <img src="caminho/para/imagem4.jpg" alt="Imagem 4">
     </div>
   </div>
   
-  <!-- Página 5 -->
   <div data-role="page" id="page5">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 5</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 5</h2>
       <p>Texto e imagem relacionados à página 5.</p>
-      <img src="caminho/para/imagem8.jpg" alt="Imagem 8">
+      <img src="caminho/para/imagem5.jpg" alt="Imagem 5">
     </div>
   </div>
   
-  <!-- Página 6 -->
   <div data-role="page" id="page6">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 6</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 6</h2>
       <p>Texto e imagem relacionados à página 6.</p>
-      <img src="caminho/para/imagem9.jpg" alt="Imagem 9">
+      <img src="caminho/para/imagem6.jpg" alt="Imagem 6">
     </div>
   </div>
   
-  <!-- Página 7 -->
   <div data-role="page" id="page7">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 7</h1>
     </div>
     <div data-role="main" class="ui-content">
-      <h2>Conteúdo da Página 7</h2>
-      <p>Texto e imagem relacionados à página 7.</p>
-      <img src="caminho/para/imagem10.jpg" alt="Imagem 10">
+      <h2>Formulário de Cadastro</h2>
+      <form action="caminho/para/processar_cadastro.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Cadastrar">
+      </form>
     </div>
   </div>
   
-  <!-- Página 8 -->
   <div data-role="page" id="page8">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 8</h1>
     </div>
     <div data-role="main" class="ui-content">
       <h2>Conteúdo da Página 8</h2>
       <p>Texto e imagem relacionados à página 8.</p>
-      <img src="caminho/para/imagem11.jpg" alt="Imagem 11">
+      <img src="caminho/para/imagem8.jpg" alt="Imagem 8">
     </div>
   </div>
   
-  <!-- Página 9 -->
   <div data-role="page" id="page9">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 9</h1>
     </div>
     <div data-role="main" class="ui-content">
-      <h2>Conteúdo da Página 9</h2>
-      <p>Texto e imagem relacionados à página 9.</p>
-      <img src="caminho/para/imagem12.jpg" alt="Imagem 12">
+      <h2>Formulário de Reclamação</h2>
+      <form action="caminho/para/processar_reclamacao.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="reclamacao">Reclamação:</label>
+        <textarea id="reclamacao" name="reclamacao"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
     </div>
   </div>
   
-  <!-- Página 10 -->
   <div data-role="page" id="page10">
-    <div data-role="header" data-position="fixed">
-      <a href="#home" data-icon="back" data-rel="back">Voltar</a>
+    <div data-role="header">
       <h1>Página 10</h1>
     </div>
     <div data-role="main" class="ui-content">
-      <h2>Conteúdo da Página 10</h2>
-      <p>Texto e imagem relacionados à página 10.</p>
-      <img src="caminho/para/imagem13.jpg" alt="Imagem 13">
+      <h2>Formulário para ser revendedor</h2>
+      <form action="caminho/para/processar_revendedor.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
     </div>
   </div>
 </body>
