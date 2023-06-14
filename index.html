@@ -151,15 +151,14 @@
     </div>
   </div>
   
-<!-- Página 8 -->
 <div data-role="page" id="page8">
   <div data-role="header" data-position="fixed">
     <a href="#home" data-icon="back" data-rel="back">Voltar</a>
-    <h1>Formulário de cadastro</h1>
+    <h1>Formulário de Cadastro</h1>
   </div>
   <div data-role="main" class="ui-content">
     <h2>Formulário de Cadastro</h2>
-    <form action="caminho/para/processar_cadastro.php" method="post">
+    <form action="caminho/para/processar_cadastro.php" method="post" id="formCadastro">
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome">
       <label for="email">Email:</label>
@@ -171,16 +170,15 @@
     <img src="caminho/para/imagem11.jpg" alt="Imagem 11">
   </div>
 </div>
-
-<!-- Página 9 -->
-<div data-role="page" id="page9">
+  
+  <div data-role="page" id="page9">
   <div data-role="header" data-position="fixed">
     <a href="#home" data-icon="back" data-rel="back">Voltar</a>
     <h1>Seja um Revendedor</h1>
   </div>
   <div data-role="main" class="ui-content">
     <h2>Formulário de Revendedor</h2>
-    <form action="caminho/para/processar_revendedor.php" method="post">
+    <form action="caminho/para/processar_revendedor.php" method="post" id="formRevendedor">
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome">
       <label for="email">Email:</label>
@@ -198,8 +196,6 @@
     <img src="caminho/para/imagem12.jpg" alt="Imagem 12">
   </div>
 </div>
-
-<!-- Página 10 -->
 <div data-role="page" id="page10">
   <div data-role="header" data-position="fixed">
     <a href="#home" data-icon="back" data-rel="back">Voltar</a>
@@ -207,7 +203,7 @@
   </div>
   <div data-role="main" class="ui-content">
     <h2>Formulário de Reclamação</h2>
-    <form action="caminho/para/processar_reclamacao.php" method="post">
+    <form action="caminho/para/processar_reclamacao.php" method="post" id="formReclamacao">
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome">
       <label for="email">Email:</label>
@@ -219,6 +215,34 @@
     <img src="caminho/para/imagem13.jpg" alt="Imagem 13">
   </div>
 </div>
+<script>
+  // Espera o documento estar pronto
+  $(document).ready(function() {
+    // Manipula o envio do formulário de cadastro
+    $('#formCadastro').submit(function(event) {
+      event.preventDefault();
+      // Exibe a mensagem de sucesso
+      $.mobile.changePage("#paginaSucesso", { transition: "slide" });
+    });
+
+    // Manipula o envio do formulário de revendedor
+    $('#formRevendedor').submit(function(event) {
+      event.preventDefault();
+      // Exibe a mensagem de sucesso
+      $.mobile.changePage("#paginaSucesso", { transition: "slide" });
+    });
+
+    // Manipula o envio do formulário de reclamação
+    $('#formReclamacao').submit(function(event) {
+      event.preventDefault();
+      // Exibe a mensagem de sucesso
+      $.mobile.changePage("#paginaSucesso", { transition: "slide" });
+    });
+  });
+</script>
+
+  
+  
     </div>
   </div>
 </body>
