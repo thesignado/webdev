@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Clothes - Aplicação Web</title>
+  <title>My Clothes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://drive.google.com/file/d/1GewAnCD4iUKijzg7k6wB_N8_-86SgxKy/view?usp=drive_link" type="image/x-icon">
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -28,9 +29,10 @@
   </div>
   <div data-role="main" class="ui-content">
     <h2>Bem-vindo à My Clothes</h2>
-    <p>Descrição da empresa e seus produtos/serviços.</p>
+    <p>A My Clothes é uma empresa dedicada a oferecer roupas e acessórios de alta qualidade para homens, mulheres e crianças. Com uma ampla variedade de estilos, desde roupas casuais a peças sofisticadas, estamos comprometidos em proporcionar uma experiência de compra excepcional para nossos clientes.</p>
+    <p>Nosso objetivo é ajudar você a se sentir confiante e expressar sua individualidade por meio da moda. Trabalhamos com marcas renomadas e designers talentosos, garantindo que cada item em nosso catálogo seja cuidadosamente selecionado com base na qualidade, estilo e tendências atuais.</p>
+    <p>Além disso, oferecemos promoções especiais regularmente, permitindo que você adquira suas roupas favoritas a preços acessíveis. Nossa equipe de atendimento ao cliente está sempre pronta para ajudar, fornecendo orientação
 
-    <!-- Tabela com texto e imagens -->
     <table data-role="table" id="products-table" data-mode="reflow" class="ui-responsive">
       <thead>
         <tr>
@@ -214,45 +216,6 @@
       <input type="submit" value="Enviar Reclamação">
     </form>
     <img src="caminho/para/imagem13.jpg" alt="Imagem 13">
-  </div>
-</div>
-<script>
-  // Espera o documento estar pronto
-  $(document).ready(function() {
-    // Manipula o envio do formulário de cadastro
-    $('#formCadastro').submit(function(event) {
-      event.preventDefault();
-      // Exibe a mensagem de sucesso
-      $.mobile.changePage("#paginaSucesso", { transition: "slide" });
-    });
-
-    // Manipula o envio do formulário de revendedor
-    $('#formRevendedor').submit(function(event) {
-      event.preventDefault();
-      // Exibe a mensagem de sucesso
-      $.mobile.changePage("#paginaSucesso", { transition: "slide" });
-    });
-
-    // Manipula o envio do formulário de reclamação
-    $('#formReclamacao').submit(function(event) {
-      event.preventDefault();
-      // Exibe a mensagem de sucesso
-      $.mobile.changePage("#paginaSucesso", { transition: "slide" });
-    });
-  });
-  $(document).ready(function() {
-    // Adiciona a classe "navbar-fixed" ao menu quando a página é rolada
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 0) {
-        $('.navbar-fixed').addClass('ui-navbar-fixed-top');
-      } else {
-        $('.navbar-fixed').removeClass('ui-navbar-fixed-top');
-      }
-</script>
-
-  
-  
-    </div>
   </div>
 </body>
 </html>
