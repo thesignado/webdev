@@ -240,6 +240,14 @@
       $.mobile.changePage("#paginaSucesso", { transition: "slide" });
     });
   });
+  $(document).ready(function() {
+    // Adiciona a classe "navbar-fixed" ao menu quando a página é rolada
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 0) {
+        $('.navbar-fixed').addClass('ui-navbar-fixed-top');
+      } else {
+        $('.navbar-fixed').removeClass('ui-navbar-fixed-top');
+      }
 </script>
 
   
